@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@700&family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,700;1,400&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@600;800&family=Mulish:wght@200&family=Noto+Sans:wght@100&family=Open+Sans:wght@300&family=Roboto+Slab:wght@200;400;700&family=Shantell+Sans:ital@1&display=swap');
+
+
+
+:root {
+    --very-dark-Magenta: hsl(300, 43%, 22%);
+    --soft-pink: #ee68a4;
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+     
+     .attribution, .atribution a{
+        font-size: 11px;
+        text-align: center;
+        color: hsl(228, 45%, 44%);
+      }
+
+body {
+    font-family: "League Spartan", sans serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1, .stars p {
+    color: var(--very-dark-Magenta);
+
+}
+
+main p {
+    color: var(--dark-grayish-magenta)
+}
+
+.stars img {
+    padding-right: 5px;
+
+}
+
+h2 {
+    color: white;
+
+}
+
+.card {
+    background-color: var(--very-dark-Magenta);
+}
+
+.card p {
+    color: var(--soft-pink);
+}
+
+
+@media screen and (min-width: 769px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;        
+    }
+
+
+    .header {
+        width: 40%;
+        text-align: start;
+    }
+
+    .stars {
+        width: 500px;
+        padding: 10px;
+        align-items: center;
+    }
+
+
+
+    .points {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        padding-left: 12px;
+        
+    }
+
+    .stars .points:nth-child(1) {
+        margin-right: 60px;
+    }
+
+    .stars .points:nth-child(2) {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .stars .points:nth-child(3) {
+        margin-left: 60px;
+    }
+
+    .reviews {
+        display: flex;
+        gap: 20px;
+        height: 325px;
+        margin-bottom: 50px;
+    }
+
+    .card:nth-child(1) {
+       align-self: start;      
+    }
+
+    .card:nth-child(2) {
+        align-self: center;
+    }
+
+    .card:nth-child(3) {
+        align-self: end;
+    }
+
+}
+
+
+
